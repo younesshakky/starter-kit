@@ -1,0 +1,52 @@
+// libs
+@import "libs/font-awesome.min";
+@import "libs/normalize";
+
+// pages
+
+
+// color vars
+$mainColor: #6988d7;
+
+
+// Main framework
+*{
+  padding:0;
+  margin:0;
+  box-sizing:border-box;
+}
+
+html{
+  font-size:10px;
+  font-family:'Open Sans', sans-serif; // any font family goes here
+}
+
+a{
+  text-decoration:none;
+}
+
+button{
+  background:#eee;
+  border:none;
+}
+body{font-size: 1.4rem}
+
+/* div,p,button,input,textarea,span,li,ul,ol,
+section,header,footer{} */
+
+// classes
+
+.container{
+  width:960px;
+  max-width:95%;
+  margin:0 auto;
+}
+.lg-container{
+  @extend .container;
+  width:1170px;
+  padding:0 15px;
+}
+
+
+
+.clearfix{clear:both;}
