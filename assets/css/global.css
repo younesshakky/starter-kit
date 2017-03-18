@@ -3178,8 +3178,6 @@ body {
   font-size: 1.4rem;
 }
 
-/* div,p,button,input,textarea,span,li,ul,ol,
-section,header,footer{} */
 .container, .lg-container {
   width: 960px;
   max-width: 95%;
@@ -3189,6 +3187,14 @@ section,header,footer{} */
 .lg-container {
   width: 1170px;
   padding: 0 15px;
+}
+
+.p-left {
+  float: left;
+}
+
+.p-right {
+  float: right;
 }
 
 .clearfix {
