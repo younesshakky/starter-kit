@@ -17,28 +17,17 @@ button{
   background:#eee;
   border:none;
 }
-body{font-size: 1.4rem}
 
+body{
+  font-size: 1.4rem
+}
 
 .container{
-  width:960px;
-  max-width:95%;
+  width:1150px;
+  max-width: 100%;
+  padding: 0 15px;
   margin:0 auto;
 }
 
-.lg-container{
-  @extend .container;
-  width:1170px;
-  padding:0 15px;
-}
-
-.p-left{
-	float: left;
-}
-
-.p-right{
-	float: right;
-}
-
-
 .clearfix{clear:both;}
+

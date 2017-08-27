@@ -1,36 +1,19 @@
-
-
-// this is a javascript file
-
-
-(function(){
-
-  alert('this is an alert')
-  console.log('hey console');
-
-  console.error('hey im an error')
-
-  var myObject = new Object();
-
-  myObject.prototype.gather = function (){
-    this.assemble(astuce, greatNumber);
-    
-    docTrig.addEventListener('input change' function(){
-      switch(window.location.hash){
-        case '#':
-          window.reload();
-          break;
-        case '#gathering':
-          window.go(window.host + '/gathering');
-          break;
-        default:
-          console.error(errorMessage)
-          window.go(__404__);
-      }
-    });
-
-    return this.cleverkid || this.stupidKid;
-
+document.onclick = function () {
+  // alert('ouch!!')
+  var oucher = document.querySelector('.oucher');
+  var randomColor = `rgb(${rand(255)}, ${rand(255)}, ${rand(255)})`;
+  var oucherness = document.createElement('div')
+  oucher.appendChild(oucherness)
+  if( (oucher.querySelectorAll('div').length % 5) == 0 ) {
+    // alert('')
+    oucherness.innerText += 'stooop MADAFAKAH \n'
   }
+  else {
+    oucherness.innerText += 'Ouch!! \n'
+  }
+  oucherness.style.color = randomColor.toString();
+}
 
-})();
+function rand (max) {
+  return Math.round( Math.random() * max )
+}
