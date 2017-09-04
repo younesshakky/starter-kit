@@ -13,7 +13,7 @@ const srcSass = 'assets/sass/**/*.scss'
 
 gulp.task('sass', () => {
   return gulp.src(srcSass)
-  .pipe( sass.sync().on('error', sass.logError) )
+  .pipe( sass.sync({outputStyle: 'expanded'}).on('error', sass.logError) )
   .pipe(gulp.dest('assets/css'))
 })
 
@@ -25,4 +25,3 @@ gulp.task('build', ['sass', 'sass:watch'])
 
 
 gulp.task('default', ['serve', 'build'])
-
